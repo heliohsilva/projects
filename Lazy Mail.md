@@ -48,7 +48,7 @@ The result is a concise morning briefing containing only the relevant emails fro
 
 Simplified flow:
 
-<workflow>
+# WORKFLOW
 
 ---
 
