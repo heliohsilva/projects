@@ -1,5 +1,7 @@
 # Lazy Mail
 
+---
+
 ## Overview
 
 Lazy Mail is an automated agent that filters and summarizes important emails from Microsoft Outlook using LLMs and delivers a daily briefing via Telegram.
