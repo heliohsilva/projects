@@ -139,3 +139,5 @@ Through this project I gained practical experience with:
 - Implementing a content pipeline from Markdown to HTML
 - Structuring a maintainable frontend project without frameworks
 - Deploying static websites using GitHub Pages
+
+---

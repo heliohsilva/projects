@@ -94,3 +94,5 @@ Simplified flow:
 - Practical integration with the Microsoft Graph API.
 - Prompt engineering for classification and summarization tasks.
 - Designing automation systems focused on real productivity gains.
+
+---
