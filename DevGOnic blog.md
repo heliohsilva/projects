@@ -4,9 +4,9 @@
 
 ## Overview
 
-DevGOnic is a lightweight personal blog platform built from scratch using Node.js and vanilla JavaScript. The goal of the project is to provide a simple and maintainable way to publish technical articles while keeping full control over the architecture and tooling.
+DevGOnic is a lightweight personal blog platform built from scratch using Node.js. The goal of the project is to provide a simple and maintainable way to publish technical articles while keeping full control over the architecture and tooling.
 
-Instead of relying on large static site generators, DevGOnic uses a minimal custom engine that converts Markdown articles into static HTML pages and deploys them as a static website.
+DevGOnic uses a minimal custom engine that converts Markdown articles into static HTML pages and deploys them as a static website.
 
 The blog is available at:
 [devgonic.com](https://devgonic.com)
@@ -15,7 +15,7 @@ The blog is available at:
 
 ## Problem
 
-I wanted a personal blog to publish technical content and store tutorials that I may need to revisit in the future. Initially, I considered using existing static site generators such as [Hugo](https://gohugo.io/).
+I wanted a personal blog to publish technical informal content and tutorials that I may need to revisit in the future. Initially, I considered using existing static blog site generators such as [Hugo](https://gohugo.io/).
 
 However, most existing solutions include many features that I did not need and introduce additional complexity. My goal was to build something minimal, fully customizable, and as easy as possible to maintain.
 
