@@ -52,6 +52,40 @@ Simplified flow:
 
 # WORKFLOW
 
+```mermaid
+flowchart LR
+
+%% Nodes
+    A[Aggregate]
+    B[Code in JavaScript2]
+    C[Send a text message]
+    D([Schedule Trigger])
+    E[HTTP Request1]
+    F[Code in JavaScript1]
+    G{Loop Over Items}
+    H[Aggregate1]
+    I[Message a model1]
+    J[Code in JavaScript]
+
+%% Start/End
+    START((Start))
+    END((End))
+
+%% Connections
+    I --> J
+    G -->|"(0)"| A
+    G -->|"(1)"| H
+    F --> G
+    D --> E
+    START --> D
+    J --> G
+    E --> F
+    H --> I
+    C --> END
+    A --> B
+    B --> C
+```
+
 ---
 
 ## Technologies Used
