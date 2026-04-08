@@ -50,22 +50,20 @@ The result is a concise morning briefing containing only the relevant emails fro
 
 Simplified flow:
 
-# WORKFLOW
-
 ```mermaid
 flowchart LR
-
+  
 %% Nodes
     A[Aggregate]
-    B[Code in JavaScript2]
-    C[Send a text message]
+    B[Format text]
+    C[Send a telegram message]
     D([Schedule Trigger])
-    E[HTTP Request1]
-    F[Code in JavaScript1]
-    G{Loop Over Items}
-    H[Aggregate1]
-    I[Message a model1]
-    J[Code in JavaScript]
+    E[Fetch Emails From last 24h]
+    F[Pre-processing emails]
+    G{Loop Over Batch Items}
+    H[Aggregate]
+    I[Filter and summarize emails]
+    J[Format output]
 
 %% Start/End
     START((Start))
@@ -84,6 +82,7 @@ flowchart LR
     C --> END
     A --> B
     B --> C
+
 ```
 
 ---
