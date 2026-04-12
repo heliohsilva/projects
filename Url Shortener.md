@@ -1,10 +1,14 @@
 # URL-Shortner
 
+---
+
 ## Overview
 
 URL Shortener is a backend service designed to transform long URLs into short, shareable links. The system focuses on performance, scalability, and simplicity, providing a reliable way to redirect users efficiently.
 
 The API is built using Go and follows a clean architecture approach to ensure maintainability and extensibility.
+
+---
 
 ## Problem
 
@@ -15,6 +19,8 @@ The challenge was to design a system capable of:
 - Generating compact and unique short URLs
 - Handling high-frequency redirections efficiently
 - Minimizing database access latency
+
+---
 
 ## Solution
 
@@ -29,6 +35,8 @@ When a request is made:
 - Otherwise, it queries the database and updates the cache
 
 This approach ensures fast response times, especially for frequently accessed links.
+
+---
 
 ## Architecture
 
@@ -73,6 +81,7 @@ The project tree is showed bellow:
 │       └── urlService.go
 └── README.md
 ```
+---
 
 ## Technologies Used
 
@@ -83,6 +92,8 @@ The project uses a focused and efficient technology stack:
 - MySQL – persistent data storage
 - Redis – in-memory cache layer
 - Docker – containerized environment setup
+
+---
 
 ## Technical Decisions
 
@@ -95,6 +106,8 @@ Several decisions were made to ensure performance and maintainability:
 
 These choices result in a system that is both efficient and easy to extend.
 
+---
+
 ## Technical Challenges
 
 One of the main challenges was designing an efficient caching strategy.
@@ -102,6 +115,8 @@ One of the main challenges was designing an efficient caching strategy.
 It was necessary to ensure consistency between Redis and MySQL while avoiding stale data and unnecessary cache misses. Balancing cache usage and database synchronization required careful handling of read/write flows.
 
 Another challenge was generating unique short URLs without collisions while maintaining performance.
+
+---
 
 ## Results
 
@@ -111,6 +126,8 @@ Due to the caching layer, frequently accessed URLs are resolved with very low la
 
 The system is modular, easy to maintain, and ready to be integrated with a frontend application.
 
+---
+
 ## Key learnings
 
 Through this project I gained practical experience with:
@@ -119,3 +136,7 @@ Through this project I gained practical experience with:
 - Implementing caching strategies with Redis
 - Structuring Go applications using clean architecture principles
 - Optimizing API performance and reducing latency
+
+---
+
+Link to project repository: [url-shortener](https://github.com/heliohsilva/url-shortener)
