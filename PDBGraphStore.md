@@ -183,5 +183,5 @@ Through this project, I gained practical experience with:
 
 ---
 
-Link to project repository: [graphein-on-ray](https://github.com/heliohsilva/graphein-on-ray)
+Link to project repository: [graphein-on-ray](https://github.com/dcc-ufla-graph-mining/graphein-graph-store)
 
